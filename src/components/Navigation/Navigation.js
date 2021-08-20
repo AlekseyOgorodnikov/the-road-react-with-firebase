@@ -9,7 +9,7 @@ const Navigation = () => {
     <>
       <ul>
         <li>
-          <Link to={ROUTES.SIGN_IN}>Sing In </Link>
+          <Link to={ROUTES.SIGN_IN}>Sing In</Link>
         </li>
         <li>
           <Link to={ROUTES.LANDING}>Landing</Link>
