@@ -32,7 +32,7 @@ class SignUpFormBase extends Component {
   }
 
   onSubmit = (event) => {
-    const { username, email, passwordOne } = this.state;
+    const { email, passwordOne } = this.state;
 
     this.props.firebase
       .doCreateUserWithEmailAndPassword(email, passwordOne)
@@ -106,9 +106,14 @@ class SignUpFormBase extends Component {
 }
 
 const SignUpLink = () => {
-  <p>
-    Нет учетной записи? <Link to={ROUTES.SIGN_UP}>Зарегистрироваться</Link>
-  </p>;
+  return (
+    <>
+      <p>
+        Нет учетной записи? <Link to={ROUTES.SIGN_UP}>Зарегистрироваться</Link>
+      </p>
+      ;
+    </>
+  );
 };
 
 const SignUpForm = compose(withRouter, withFirebase)(SignUpFormBase);
