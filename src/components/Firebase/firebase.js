@@ -10,7 +10,6 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_APP_ID,
   measurementId: process.env.REACT_APP_MEASURMENT_ID,
 };
-console.log(firebaseConfig.apiKey);
 
 class Firebase {
   constructor() {
