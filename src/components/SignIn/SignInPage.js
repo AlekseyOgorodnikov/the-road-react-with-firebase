@@ -10,7 +10,7 @@ const SignInPage = () => (
   <div>
     <h1>SignIn</h1>
     <SignInForm />
-    {/* <SignUpLink /> */}
+
     <SignUpLink />
   </div>
 );
